@@ -1,0 +1,46 @@
+:root
+  --container-mw 86rem
+
+html
+  font 400 100%/1.5 $font-family-sans-serif
+  text-size-adjust 100%
+  font-smoothing antialiased
+  font-variant-ligatures contextual common-ligatures
+  font-kerning normal
+  text-rendering optimizeLegibility
+  background-color var(--primary-50)
+  color var(--white)
+
+@supports (font-variation-settings: normal)
+  html
+    font-family $font-family-sans-serif-var
+    font-weight $font-weight-normal-base
+
+body
+  overflow-x hidden
+  margin 0
+
+*,
+*::before,
+*::after
+  box-sizing border-box
+  margin 0
+
+::selection
+  background #e548f8
+  color var(--white)
+
+a
+  color var(--link)
+  text-decoration none
+  outline-color rgba(64, 179, 255, 0.92)
+  cursor pointer
+  transition all .25s $ease-out
+  &:hover,
+  &:focus
+    color var(--white)
+  &:active
+    opacity 0.6
+    transition-duration 0s
+  &.nuxt-link-active
+    pointer-events none
