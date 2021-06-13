@@ -1,4 +1,5 @@
 # Cosmos
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7bee2ebd-1ac3-4e05-9bb8-a3859826447f/deploy-status)](https://app.netlify.com/sites/unruffled-lichterman-48e057/deploys/)
 
 ## Build Setup
 
